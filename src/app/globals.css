@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-health-black bg-health-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-bold;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-health-gray hover:text-health-blue transition-colors duration-200 font-medium;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-health-black mb-6;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-health-blue text-white rounded-lg hover:bg-opacity-90 transition-all duration-200 font-medium;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-health-blue text-health-blue rounded-lg hover:bg-health-blue hover:text-white transition-all duration-200 font-medium;
+  }
+}
+
+/* Custom animations */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Custom scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.3);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+/* Smooth scroll behavior for accordion content */
+.accordion-content {
+  scroll-behavior: smooth;
+}
