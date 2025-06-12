@@ -105,7 +105,7 @@ const Hero = () => {
                   alt="Himedi Makrame - Ingénieure digitale en santé"
                   fill
                   priority
-                  className="object-cover hover:scale-105 transition-transform duration-300 -rotate-90"
+                  className="object-cover hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 768px) 300px, 400px"
                 />
               </div>
