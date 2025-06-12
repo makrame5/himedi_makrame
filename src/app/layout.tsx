@@ -16,8 +16,33 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Ingénieure Digitale Santé',
-  description: 'Portfolio professionnel spécialisé dans les solutions numériques pour la santé',
+  title: 'Makrame Himedi - Portfolio',
+  description: 'Portfolio de Makrame Himedi - Étudiant en ingénierie digitale pour les métiers de la santé. Spécialisé en télémédecine, IA médicale et computer vision.',
+  keywords: ['portfolio', 'ingénierie digitale', 'santé', 'télémédecine', 'IA médicale', 'computer vision', 'IoT médical'],
+  authors: [{ name: 'Makrame Himedi' }],
+  creator: 'Makrame Himedi',
+  publisher: 'Makrame Himedi',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  icons: {
+    icon: [
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { rel: 'mask-icon', url: '/safari-pinned-tab.svg', color: '#3b82f6' },
+    ],
+  },
+  manifest: '/site.webmanifest',
+  themeColor: '#3b82f6',
+  colorScheme: 'light',
+  viewport: 'width=device-width, initial-scale=1',
 }
 
 export default function RootLayout({
